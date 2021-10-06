@@ -1,4 +1,4 @@
-#n=str(input('Enter a value : '))
+#nl=str(input('Enter a value : '))
 n= input('Enter a value : ')
 if n.isnumeric():
     y=int(n)
