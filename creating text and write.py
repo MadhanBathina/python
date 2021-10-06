@@ -1,3 +1,4 @@
+
 n=int(input())
 try:
     file=open('write.txt', 'w')
