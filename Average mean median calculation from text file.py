@@ -29,5 +29,5 @@ else:
     medianindex=floor(((count+1)/2)-1)
     print('median',list_of_numbers[medianindex])
 
-#print(k)
+
 print('Mean',total/count)
