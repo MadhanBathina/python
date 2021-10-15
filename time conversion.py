@@ -9,32 +9,29 @@ import sys
 #
 # Complete the 'timeConversion' function below.
 #
-
 # The function is expected to return a STRING.
 # The function accepts STRING s as parameter.
 #
 
 def timeConversion(s):
     # Write your code here
-    #print(s[:2])
-
     if s[-2:] == "AM" and s[:2] == "12":
-       print ("00" + s[2:-2] )
+        s = ("00" + s[2:-2] )
     elif s[-2:] == "PM" and s[:2]=="12":
-        print( s[:-2])
+        s = s[:-2]
     elif  s[-2:] == "AM":
-        print( s[:-2])
+        s = s[:-2]
     else:
-        print((str(int(s[:2])+12))+s[2:8])
+        s = str(int(s[:2])+12)+s[2:8]
+    return s
     
 if __name__ == '__main__':
-    #fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     s = input()
 
     result = timeConversion(s)
-    
 
-    #fptr.write(result + '\n')
+    fptr.write(result + '\n')
 
-    #fptr.close()
+    fptr.close()
